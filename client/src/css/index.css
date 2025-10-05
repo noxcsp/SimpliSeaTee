@@ -10,6 +10,10 @@
   --color-main: #faf9f6;
 }
 
+@utility btn {
+  @apply rounded-sm;
+}
+
 body {
   font-family: "Figtree", sans-serif;
 }

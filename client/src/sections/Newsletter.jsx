@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 function Newsletter() {
@@ -36,7 +36,7 @@ function Newsletter() {
   };
 
   return (
-    <div className="px-3 py-4 flex flex-col items-center bg-background relative">
+    <div className="px-3 py-4 flex flex-col items-center bg-background relative md:py-8 lg:py-12">
       {showAlert && (
         <div className="toast toast-top toast-end z-50">
           <div
@@ -48,14 +48,14 @@ function Newsletter() {
           </div>
         </div>
       )}
-      <p className="font-bold italic text-[22px]">
+      <p className="font-bold italic text-[22px] md:text-3xl lg:text-4xl">
         GET 10% OFF YOUR FIRST ORDER
       </p>
-      <p className="text-center text-base my-2">
+      <p className="text-center text-base my-2 md:text-lg lg:text-xl">
         Subscribe to get special offers, free giveaways, and once-in-a-lifetime
         deals.
       </p>
-      <p className="text-center text-xs mt-2 mb-4">
+      <p className="text-center text-xs mt-2 mb-4 md:px-38 lg:text-base lg:px-52">
         Premium-quality, patterned tees designed for comfort and style. Order
         yours today and make simplicity your signature.
       </p>
@@ -65,7 +65,7 @@ function Newsletter() {
           e.preventDefault();
           sendMail();
         }}
-        className="w-full flex flex-col items-center"
+        className="md:hidden w-full flex flex-col items-center"
       >
         <div className="w-full flex flex-col items-center">
           <label className="rounded-sm focus-within:outline-0 input validator w-full max-w-[20rem]">
@@ -100,6 +100,50 @@ function Newsletter() {
         <button className="font-bold text-white py-2 px-6 bg-orange rounded-sm mt-4 w-[clamp(3rem,20rem,100%)]">
           SUBSCRIBE
         </button>
+      </form>
+      <form
+        action="post"
+        onSubmit={(e) => {
+          e.preventDefault();
+          sendMail();
+        }}
+        className="hidden w-full md:flex justify-center"
+      >
+        <div className="join">
+          <div className="w-80 lg:w-96">
+            <label className="rounded-sm focus-within:outline-0 input validator join-item w-full">
+              <svg
+                className="h-[1em] opacity-50"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  strokeLinejoin="round"
+                  strokeLinecap="round"
+                  strokeWidth="2.5"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </g>
+              </svg>
+              <input
+                type="email"
+                placeholder="mail@site.com"
+                required
+                value={mail}
+                onChange={(e) => setMail(e.target.value)}
+              />
+            </label>
+            <div className="validator-hint hidden">
+              Enter valid email address
+            </div>
+          </div>
+          <button className="btn bg-orange text-white join-item">
+            SUBSCRIBE
+          </button>
+        </div>
       </form>
     </div>
   );
