@@ -48,7 +48,7 @@ function Navbar() {
       <div className="navbar-end sm:flex lg:hidden">
         <div className="dropdown dropdown-end">
           <button
-            className="btn btn-ghost lg:hidden"
+            className="rounded-full btn btn-ghost lg:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
             <svg

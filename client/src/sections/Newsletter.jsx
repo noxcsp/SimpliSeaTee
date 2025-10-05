@@ -68,7 +68,7 @@ function Newsletter() {
         className="md:hidden w-full flex flex-col items-center"
       >
         <div className="w-full flex flex-col items-center">
-          <label className="rounded-sm focus-within:outline-0 input validator w-full max-w-[20rem]">
+          <label className="focus-within:outline-0 input validator w-full max-w-[20rem]">
             <svg
               className="h-[1em] opacity-50"
               xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@ function Newsletter() {
             Enter valid email address
           </div>
         </div>
-        <button className="font-bold text-white py-2 px-6 bg-orange rounded-sm mt-4 w-[clamp(3rem,20rem,100%)]">
+        <button className="font-bold text-white py-2 px-6 bg-orange rounded-full mt-4 w-[clamp(3rem,20rem,100%)]">
           SUBSCRIBE
         </button>
       </form>
@@ -111,7 +111,7 @@ function Newsletter() {
       >
         <div className="join">
           <div className="w-80 lg:w-96">
-            <label className="rounded-sm focus-within:outline-0 input validator join-item w-full">
+            <label className="focus-within:outline-0 input validator join-item w-full">
               <svg
                 className="h-[1em] opacity-50"
                 xmlns="http://www.w3.org/2000/svg"

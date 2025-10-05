@@ -4,7 +4,7 @@ import { scrollToSection } from "../utils/scroll";
 
 function Footer() {
   return (
-    <div className="p-4">
+    <div className="p-4 lg:px-8 lg:py-6 xl:px-18 xl:py-10">
       <footer className="grid-cols-2 sm:grid-cols-none footer sm:footer-horizontal bg-main text-base-content">
         <img src={brandlogo} width={70} alt="logo" />
         <nav>

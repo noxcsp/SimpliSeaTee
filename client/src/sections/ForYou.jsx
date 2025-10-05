@@ -35,8 +35,8 @@ function ForYou() {
           </div>
         </div>
       </div>
-      <div className="hidden lg:flex bg-background rounded-4xl p-4 shadow-[0_0_15px_rgba(0,0,0,0.25)]">
-        <img src={shirt2} alt="Shirt" className="w-60 lg:w-90 xl:w-120" />
+      <div className="hidden lg:flex bg-background rounded-4xl p-4 shadow-[0_0_15px_rgba(0,0,0,0.25)] transition duration-500 hover:scale-105">
+        <img src={shirt2} alt="Shirt" className="w-60 lg:w-90 xl:w-120 transition duration-500 hover:scale-110" />
       </div>
     </div>
   );
