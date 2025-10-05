@@ -7,7 +7,7 @@ function OurStory() {
       id="our-story-section"
       className="flex flex-col items-center text-center p-4 md:py-12 lg:flex-row lg:justify-around"
     >
-      <div className="hidden w-md my-6 h-52 overflow-hidden rounded-3xl shadow-[0_0_15px_rgba(0,0,0,0.25)] lg:flex lg:h-68 xl:w-xl xl:h-84">
+      <div className="hidden w-md my-6 h-52 overflow-hidden rounded-3xl shadow-[0_0_15px_rgba(0,0,0,0.25)] lg:flex lg:h-68 xl:w-2xl xl:h-90">
         <img src={about} alt="sunset" className="w-full object-cover h-full" />
       </div>
       <div className="lg:max-w-md lg:text-start xl:max-w-xl">
