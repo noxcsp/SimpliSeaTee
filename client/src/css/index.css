@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: all;
+}
+
+@theme {
+  --color-orange: #ffc5a1;
+  --color-background: #d8d8d6;
+  --color-main: #faf9f6;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+}
+
+@font-face {
+  font-family: "Mistrully";
+  src: url("../fonts/MistrullyRegular.woff2") format("woff2"),
+    url("../fonts/MistrullyRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.title {
+  font-family: "Mistrully", sans-serif;
+  font-weight: 100;
+}
+
+.fyp-title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.fyp-text {
+  color: oklch(55.6% 0 0);
+}
+
+@media (width >= 64px){
+  .fyp-title{
+    font-size: 1.75rem;
+  }
+  .fyp-text{
+    font-size: 1.25rem;
+  }
+}
