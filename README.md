@@ -36,7 +36,7 @@ simpliseatee/
 1. **Clone and install**
 
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/noxcsp/SimpliSeaTee.git>
    cd simpliseatee/client
    npm install
    ```
