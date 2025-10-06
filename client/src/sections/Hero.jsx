@@ -7,7 +7,7 @@ function Hero() {
     scrollToSection(sectionId);
   };
   return (
-    <div id="hero-section" className="hero bg-background h-full pt-21">
+    <div id="hero-section" className="hero bg-background h-screen">
       <div className="hero-content flex-col md:flex-row md:px-0 py-12 justify-around gap-0 w-full max-w-full">
         <div className="flex flex-col items-center">
           <img src={shirt1} alt="Shirt" className="w-60 lg:w-80 xl:w-120" />
