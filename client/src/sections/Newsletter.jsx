@@ -36,7 +36,7 @@ function Newsletter() {
   };
 
   return (
-    <div className="px-3 py-4 flex flex-col items-center bg-background relative md:py-8 lg:py-12">
+    <div id="newsletter-section" className="px-3 py-4 flex flex-col items-center bg-background relative md:py-8 lg:py-12">
       {showAlert && (
         <div className="toast toast-top toast-end z-50">
           <div
@@ -48,7 +48,7 @@ function Newsletter() {
           </div>
         </div>
       )}
-      <p className="font-bold italic text-[22px] md:text-3xl lg:text-4xl">
+      <p className="font-bold italic text-center text-xl md:text-3xl lg:text-4xl">
         GET 10% OFF YOUR FIRST ORDER
       </p>
       <p className="text-center text-base my-2 md:text-lg lg:text-xl">

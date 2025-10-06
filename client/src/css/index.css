@@ -40,9 +40,9 @@ body {
 
 @media (width >= 64px){
   .fyp-title{
-    font-size: 1.75rem;
+    font-size: 1.25rem;
   }
   .fyp-text{
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }

@@ -21,7 +21,7 @@ function OurStory() {
             className="w-full object-cover h-full"
           />
         </div>
-        <p className="fyp-text px-1.5 lg:px-0 lg:mt-4 lg:text-sm xl:leading-8">
+        <p className="text-neutral-500 px-1.5 md:text-lg lg:px-0 lg:mt-4 lg:text-xl xl:leading-8">
           SimpliSeaTee was born from a love of the ocean and the calm of
           sunsets. What started with a simple wave-inspired design has grown
           into a brand that celebrates authenticity, creating timeless tees that
