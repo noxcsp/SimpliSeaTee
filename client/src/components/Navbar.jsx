@@ -50,6 +50,7 @@ function Navbar() {
           <button
             className="rounded-full btn btn-ghost lg:hidden"
             onClick={() => setIsOpen(!isOpen)}
+            onTouchStart={() => setIsOpen(!isOpen)}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -69,27 +70,42 @@ function Navbar() {
           {isOpen && (
             <ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
               <li>
-                <button onClick={() => handleNavClick("hero-section")}>
+                <button
+                  onClick={() => handleNavClick("hero-section")}
+                  onTouchStart={() => handleNavClick("hero-section")}
+                >
                   Home
                 </button>
               </li>
               <li>
-                <button onClick={() => handleNavClick("features-section")}>
+                <button
+                  onClick={() => handleNavClick("features-section")}
+                  onTouchStart={() => handleNavClick("features-section")}
+                >
                   Features
                 </button>
               </li>
               <li>
-                <button onClick={() => handleNavClick("best-sellers-section")}>
+                <button
+                  onClick={() => handleNavClick("best-sellers-section")}
+                  onTouchStart={() => handleNavClick("best-sellers-section")}
+                >
                   Products
                 </button>
               </li>
               <li>
-                <button onClick={() => handleNavClick("fyp-section")}>
+                <button
+                  onClick={() => handleNavClick("fyp-section")}
+                  onTouchStart={() => handleNavClick("fyp-section")}
+                >
                   For You
                 </button>
               </li>
               <li>
-                <button onClick={() => handleNavClick("our-story-section")}>
+                <button
+                  onClick={() => handleNavClick("our-story-section")}
+                  onTouchStart={() => handleNavClick("our-story-section")}
+                >
                   About
                 </button>
               </li>

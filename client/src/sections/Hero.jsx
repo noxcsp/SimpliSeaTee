@@ -1,7 +1,11 @@
-import React from "react";
 import shirt1 from "../assets/shirt1.png";
+import { scrollToSection } from "../utils/scroll";
 
 function Hero() {
+
+  const handleClick = (sectionId) => {
+    scrollToSection(sectionId);
+  };
   return (
     <div id="hero-section" className="hero bg-background lg:h-screen">
       <div className="hero-content flex-col md:flex-row md:px-0 py-12 justify-around gap-0 w-full max-w-full">
@@ -15,12 +19,18 @@ function Hero() {
           <p className="text-2xl italic lg:text-3xl xl:text-4xl">
             Dive into Simplicity with
           </p>
-          <h1 className="title text-5xl my-7 xl:text-6xl xl:my-10">SimpliSeaTee</h1>
+          <h1 className="title text-5xl my-7 xl:text-6xl xl:my-10">
+            SimpliSeaTee
+          </h1>
           <p className="text-sm italic text-center lg:text-base xl:text-lg">
             Premium-quality tees that combine comfort, style, and
             simplicity—crafted for everyday wear.
           </p>
-          <button className="font-black text-white py-3 px-6 bg-orange rounded-full my-4 btn lg:btn-lg xl:btn-xl">
+          <button
+            className="font-black text-white py-3 px-6 bg-orange rounded-full my-4 btn lg:btn-lg xl:btn-xl"
+            onClick={() => handleClick("best-sellers-section")}
+            onTouchStart={() => handleClick("best-sellers-section")}
+          >
             SHOP NOW
           </button>
         </div>

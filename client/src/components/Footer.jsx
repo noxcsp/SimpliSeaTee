@@ -14,17 +14,30 @@ function Footer() {
           <a className="link link-hover">New Arrivals</a>
           <a
             onClick={() => scrollToSection("best-sellers-section")}
+            onTouchStart={() => scrollToSection("best-sellers-section")}
             className="link link-hover"
           >
             Best Selling
           </a>
-          <a className="link link-hover">Exclusive Discount</a>
+          <a
+            onClick={() => scrollToSection("newsletter-section")}
+            onTouchStart={() => scrollToSection("newsletter-section")}
+            className="link link-hover"
+          >
+            Exclusive Discount
+          </a>
         </nav>
         <nav>
           <h6 className="opacity-100 footer-title font-bold text-black">
             Company
           </h6>
-          <a className="link link-hover">About us</a>
+          <a
+            onClick={() => scrollToSection("our-story-section")}
+            onTouchStart={() => scrollToSection("our-story-section")}
+            className="link link-hover"
+          >
+            About us
+          </a>
           <a className="link link-hover">Contact</a>
         </nav>
         <nav>
