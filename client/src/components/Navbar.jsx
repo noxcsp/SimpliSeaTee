@@ -16,12 +16,13 @@ function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      if (currentScrollY <= 0) {
+      console.log(currentScrollY);
+      if (currentScrollY <= 80) {
         setShowNavbar(true);
       } else if (currentScrollY > lastScrollY.current) {
-        setShowNavbar(false); // scrolling down
+        setShowNavbar(false);
       } else {
-        setShowNavbar(true); // scrolling up
+        setShowNavbar(true);
       }
       lastScrollY.current = currentScrollY;
     };
