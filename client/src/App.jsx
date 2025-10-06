@@ -46,10 +46,11 @@ const SHIRTS = [
 function App() {
   return (
     <>
+      <div className="h-20"></div>
       <Navbar />
       <Hero />
       <ValueProposition />
-      <BestSellers slides={SHIRTS} options={OPTIONS}/>
+      <BestSellers slides={SHIRTS} options={OPTIONS} />
       <ForYou />
       <OurStory />
       <Newsletter />
