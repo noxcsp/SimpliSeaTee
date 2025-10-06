@@ -47,10 +47,11 @@ function Navbar() {
       </div>
       <div className="navbar-end sm:flex lg:hidden">
         <div className="dropdown dropdown-end">
-          <button
+          <div
+            tabIndex={0}
+            role="button"
             className="rounded-full btn btn-ghost lg:hidden"
             onClick={() => setIsOpen(!isOpen)}
-            onTouchStart={() => setIsOpen(!isOpen)}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -66,46 +67,34 @@ function Navbar() {
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>{" "}
             </svg>
-          </button>
+          </div>
           {isOpen && (
-            <ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow"
+            >
               <li>
-                <button
-                  onClick={() => handleNavClick("hero-section")}
-                  onTouchStart={() => handleNavClick("hero-section")}
-                >
+                <button onClick={() => handleNavClick("hero-section")}>
                   Home
                 </button>
               </li>
               <li>
-                <button
-                  onClick={() => handleNavClick("features-section")}
-                  onTouchStart={() => handleNavClick("features-section")}
-                >
+                <button onClick={() => handleNavClick("features-section")}>
                   Features
                 </button>
               </li>
               <li>
-                <button
-                  onClick={() => handleNavClick("best-sellers-section")}
-                  onTouchStart={() => handleNavClick("best-sellers-section")}
-                >
+                <button onClick={() => handleNavClick("best-sellers-section")}>
                   Products
                 </button>
               </li>
               <li>
-                <button
-                  onClick={() => handleNavClick("fyp-section")}
-                  onTouchStart={() => handleNavClick("fyp-section")}
-                >
+                <button onClick={() => handleNavClick("fyp-section")}>
                   For You
                 </button>
               </li>
               <li>
-                <button
-                  onClick={() => handleNavClick("our-story-section")}
-                  onTouchStart={() => handleNavClick("our-story-section")}
-                >
+                <button onClick={() => handleNavClick("our-story-section")}>
                   About
                 </button>
               </li>
