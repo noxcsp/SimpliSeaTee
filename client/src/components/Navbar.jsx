@@ -47,7 +47,9 @@ function Navbar() {
       </div>
       <div className="navbar-end sm:flex lg:hidden">
         <div className="dropdown dropdown-end">
-          <button
+          <div
+            tabIndex={0}
+            role="button"
             className="rounded-full btn btn-ghost lg:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -65,7 +67,7 @@ function Navbar() {
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>{" "}
             </svg>
-          </button>
+          </div>
           {isOpen && (
             <ul className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow">
               <li>
