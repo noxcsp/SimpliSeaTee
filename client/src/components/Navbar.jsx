@@ -51,7 +51,7 @@ function Navbar() {
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1 font-medium">
           <li>
-            <button onClick={() => handleNavClick("hero-section")}>Home</button>
+            <button onClick={() => handleNavClick("top-section")}>Home</button>
           </li>
           <li>
             <button onClick={() => handleNavClick("features-section")}>
@@ -108,7 +108,7 @@ function Navbar() {
           onClick={(e) => e.stopPropagation()}
         >
           <li>
-            <button onClick={() => handleNavClick("hero-section")}>Home</button>
+            <button onClick={() => handleNavClick("top-section")}>Home</button>
           </li>
           <li>
             <button onClick={() => handleNavClick("features-section")}>

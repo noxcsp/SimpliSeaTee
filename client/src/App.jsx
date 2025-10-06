@@ -46,7 +46,7 @@ const SHIRTS = [
 function App() {
   return (
     <>
-      <div className="h-20"></div>
+      <div id="top-section" className="h-20"></div>
       <Navbar />
       <Hero />
       <ValueProposition />
